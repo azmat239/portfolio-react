@@ -4,7 +4,7 @@ import './nav.css'
 const Nav = () => {
   return (
     <div>
-      <h1>Nav</h1>
+      Nav
     </div>
   )
 }
