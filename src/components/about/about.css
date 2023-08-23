@@ -68,12 +68,11 @@ article h1{
         grid-template-columns: 1fr;
     }
     .about-me{
-        width: 90vw;
-        margin: 0 auto 2rem;
+        width: 100%;
+        margin: 0 auto 1rem;
     }
     .about-me-img{
-        width: 100%;
-        height: 100%;
+        width:100%;
     }
     .about__cards{
         grid-template-columns: 1fr 1fr;
@@ -97,11 +96,12 @@ article h1{
     }
 
     .about-me{
-        height: fit-content;
-        margin: 2rem auto 2.6rem;
+        width: 80%;
+        margin: 2rem auto 6rem;
     }
     .about-me-img{
-        height: 100%;
+
+        height: 45rem;
     }
     .about__content p{
         text-align: center;
