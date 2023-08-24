@@ -20,6 +20,12 @@
     margin: 0.3rem auto;
     user-select: none;
 }
+
+.testimonial:hover{
+    background-color: transparent;
+    border-color: var(--color-primry);
+
+}
 .testimonial__review{
     color: var(--color-light);
     font-weight: 300;
