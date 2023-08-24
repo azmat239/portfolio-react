@@ -1,0 +1,115 @@
+.about__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+.about-me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius:2rem ;
+    background-image: linear-gradient(45deg,transparent,var(--color-primry),transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about-me-img{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 2rem;
+    transform: rotate(-10deg);
+    transition: var(--transition);
+}
+
+.about-me-img:hover{
+    transform: rotate(0deg);
+}
+
+.about__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.about__card_content{
+    background-color: var(--color-bg-variant);
+    padding: 2.5rem 0.5rem;
+    border-radius:1rem ;
+    transition: var(--transition);
+}
+
+.about__card_content:hover{
+    background: transparent;
+    background-color: var(--color-primry-variant);
+    cursor: default;
+}
+
+.about__icon{
+    font-size:2rem ;
+}
+
+article h2{
+    margin-top: 1.5rem;
+}
+
+article h1{
+    font-size: 0.9rem;
+}
+
+.about__content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+
+} 
+
+@media  screen and (max-width:660px) {
+    .about__container{
+        grid-template-columns: 1fr;
+    }
+    .about-me{
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+    .about-me-img{
+        width:100%;
+    }
+    .about__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about__content p{
+        text-align: center;
+    }
+
+    .about__content a{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .about__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about-me{
+        width: 80%;
+        margin: 2rem auto 6rem;
+    }
+    .about-me-img{
+
+        height: 45rem;
+    }
+    .about__content p{
+        text-align: center;
+    }
+
+    .about__content a{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

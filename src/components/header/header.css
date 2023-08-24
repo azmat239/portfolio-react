@@ -1,0 +1,86 @@
+header{
+    height: 100vh;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+
+.header__container{
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.cta{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+.header__Social{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position:absolute;
+    left: 0;
+    bottom: 2rem;
+}
+
+.header__Social::after{
+    content:'';
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primry);
+    position: relative;
+    left: 0.4rem;
+}
+
+.Me{
+    background:linear-gradient( var(--color-primry),transparent);
+    width:22rem ;
+    height:30rem ;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 1.8rem 1rem 1rem 1.8rem;
+}
+
+
+.ScrollBar{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 78vh;
+        margin-top: 15vh;
+        padding-top:0.4rem ;
+    }
+    .Me{
+        margin: 12vh 0;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 80vh;
+    }
+
+    .ScrollBar,.header__Social{
+        display: none;
+    }
+    .Me{
+        margin: 5rem 0;
+        height: 15rem;
+    }
+}
